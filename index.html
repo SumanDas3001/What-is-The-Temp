@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-4 text-center mt-3">What's The Temp?</h1>
+    <div class="row mb-3">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <input 
+          type="number" 
+          id="farInput"
+          class="form-control form-control-lg"
+          placeholder="Enter degrees in Farenheit"
+        >
+        <div class="card mb-2 bg-primary mt-3">
+          <div class="card-body">
+            <div><span id="farTocel"></span>&deg;C</div>
+          </div>
+        </div>
+        <div class="card mb-2 bg-secondary mt-3">
+          <div class="card-body">
+            <div><span id="farTokel"></span>&deg;K</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <input 
+          type="number" 
+          id="celInput"
+          class="form-control form-control-lg"
+          placeholder="Enter degrees in Celsius"
+        >
+        <div class="card mb-2 bg-info mt-3">
+          <div class="card-body">
+            <div><span id="celTofar"></span>&deg;F</div>
+          </div>
+        </div>
+        <div class="card mb-2 bg-success mt-3">
+          <div class="card-body">
+            <div><span id="celTokel"></span>&deg;K</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <input 
+          type="number" 
+          id="kelInput"
+          class="form-control form-control-lg"
+          placeholder="Enter degrees in Kelvin"
+        >
+        <div class="card mb-2 bg-warning mt-3">
+          <div class="card-body">
+            <div><span id="kelToCel"></span>&deg;C</div>
+          </div>
+        </div>
+        <div class="card mb-2 bg-danger mt-3">
+          <div class="card-body">
+            <div><span id="kelTofar"></span>&deg;F</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
